@@ -1,0 +1,14 @@
+.GroupNav{
+    display: flex;
+    justify-content: space-between;
+    font-size: 1vw;
+    p{font-family: Asia;}
+    a{
+        text-decoration: none;
+        color: white;
+    }
+}
+
+p.active{
+    
+}

@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: Asia;
+    src: url(fonts/StalinistOne-Regular.ttf);
+}
+@font-face {
+    font-family: pt-b;
+    src: url(fonts/PT-Astra-Serif_Bold.ttf);
+}
+@font-face {
+    font-family: pt-r;
+    src: url(fonts/PT-Astra-Serif_Regular.ttf);
+}
+
+.body{
+    background-color: #101010;
+
+    color: #fff;
+    background-image: url(images/bg.png);
+    background-size: cover;
+}
+
+section{
+    padding: 0 7.3vw;
+}
+
+h1, h2, h3, a{
+    font-family: Asia;
+}
+h4, h5, h6, p{
+    font-family: pt-r;
+}
