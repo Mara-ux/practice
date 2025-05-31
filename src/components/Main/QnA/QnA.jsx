@@ -3,7 +3,10 @@ import s from './QnA.module.css'
 import Btn from './Btns/Btn';
 import Answer from './Answers/Answer';
 
+
+
 const QnA = (props) => {
+    
     return (
         <section>
             <h2>{props.title}</h2>

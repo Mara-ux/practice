@@ -1,14 +1,17 @@
-import './Main.module.css'
-import s from './Main.module.css'
-import mainBG from "../../images/main.png"
-
+import MainSect from './MainSect/MainSect';
+import CardRow1 from './CardRows/CardRow1';
+import CardRow2 from './CardRows/CardRow2';
+import CardRow3 from './CardRows/CardRow3';
+import QnA from './QnA/QnA';
 
 const Main = () => {
-    return(
+    return (
         <div>
-            <section className={s.main}>
-                <img src={mainBG} alt="" />
-            </section>
+            <MainSect />
+            <CardRow1 title="Хиты продаж" />
+            <CardRow2 title="Новинки" />
+            <CardRow3 title="Скидки" />
+            <QnA title="Частые вопросы" />
         </div>
     );
 }

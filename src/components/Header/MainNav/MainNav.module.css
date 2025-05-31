@@ -30,6 +30,10 @@
 .flex_wrapper a:hover{
     color: #FB7E36;
 }
+.flex_wrapper a.active{
+    color: #FB7E36;
+}
+
 #logo {
     height: 5.2vw;
 }

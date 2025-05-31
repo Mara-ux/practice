@@ -1,24 +1,23 @@
 import './App.css';
 import Header from "./components/Header/Header"
-import Main from './components/Main/Main'
-import CardRow1 from "./components/CardRows/CardRow1"
-import QnA from './components/QnA/QnA';
 import Footer from './components/Footer/Footer';
-import CardRow2 from './components/CardRows/CardRow2';
-import CardRow3 from './components/CardRows/CardRow3';
-
+import { BrowserRouter, Routes, Route} from 'react-router-dom';
+import Main from './components/Main/Main';
+import About from './components/About/About';
 
 const App = () => {
   return (
-    <div className="body">
-      <Header />
-      <Main />
-      <CardRow1 title="Хиты продаж" />
-      <CardRow2 title="Новинки" />
-      <CardRow3 title="Скидки" />
-      <QnA title="Частые вопросы" />
-      <Footer />
-    </div>
+    <BrowserRouter>
+      <div className="body">
+        <Header />
+        <Routes>
+          <Route path="/main*" element={<Main />} />
+          <Route path="/about*" element={<About/>}/>
+        </Routes>
+        <Footer />
+      </div>
+    </BrowserRouter>
+
   );
 }
 

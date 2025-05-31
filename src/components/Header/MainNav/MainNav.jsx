@@ -4,20 +4,21 @@ import Search from './../../../images/search.png'
 import Account from './../../../images/icons/account.png'
 import Cart from './../../../images/icons/cart.png'
 import s from './MainNav.module.css'
+import { NavLink } from 'react-router-dom';
 
 const MainNav = () => {
     return (
         <div className={s.mainNav}>
             <div className={s.wrapper}>
-                <a href="#"><img src={logo} alt="logo" id={s.logo} /></a>
+                <NavLink to="/main"><img src={logo} alt="logo" id={s.logo} /></NavLink>
                 <div className={s.flex_wrapper}>
                     <div className={s.row}>
-                        <a href="#">О нас</a>
-                        <a href="#">Доставка и оплата</a>
+                        <NavLink to="/about">О нас</NavLink>
+                        <NavLink to="" >Доставка и оплата</NavLink>
                     </div>
                     <div className={s.row}>
-                        <a href="#">Каталог</a>
-                        <a href="#">Контакты</a>
+                        <NavLink to="" >Каталог</NavLink>
+                        <NavLink to="" >Контакты</NavLink>
                     </div>
                 </div>
             </div>

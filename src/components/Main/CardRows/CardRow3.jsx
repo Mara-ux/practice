@@ -1,10 +1,10 @@
 import './CardRow2.module.css'
 import s from "./CardRow2.module.css"
 import Card from "./Card/Card"
-import card_1 from "../../images/cards/image-2.png"
-import card_2 from "../../images/cards/image-6.png"
-import card_3 from "../../images/cards/image-7.png"
-import card_4 from "../../images/cards/image-8.png"
+import card_1 from "../../../images/cards/image-2.png"
+import card_2 from "../../../images/cards/image-6.png"
+import card_3 from "../../../images/cards/image-7.png"
+import card_4 from "../../../images/cards/image-8.png"
 
 
 
