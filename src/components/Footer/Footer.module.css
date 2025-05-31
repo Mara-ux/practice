@@ -1,0 +1,7 @@
+.footer {
+    display: flex;
+    gap: 6vw;
+    background-color: #1A0C08;
+    padding-top: 2.5vw;
+    padding-bottom: 3vw;
+}

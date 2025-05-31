@@ -1,0 +1,14 @@
+.colon{
+    display: flex;
+    flex-direction: column;
+    gap: .2vw;
+    opacity: .5;
+    h6{
+        font-size: 2vw;
+    }
+    a{
+        font-family: pt-r;
+        color: #fff;
+        text-decoration: none;
+    }
+}

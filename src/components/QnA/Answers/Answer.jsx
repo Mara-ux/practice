@@ -1,9 +1,11 @@
 import "./Answer.module.css"
 import s from "./Answer.module.css"
 
-const Answer = () => {
+const Answer = (props) => {
     return(
-        <div></div>
+        <div>
+            <p className={s.answer}>{props.text}</p>
+        </div>
     )
 }
 

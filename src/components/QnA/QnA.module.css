@@ -1,0 +1,21 @@
+.wrapper{
+    display: flex;
+    padding-top: 5vw;
+    padding-bottom: 27vw;
+}
+.btn_wrapper{
+    height: 44.5vw;
+    width: 44.5vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.answers_wrapper{
+    height: 44.5vw;
+    width: 42vw;
+    background-image: url(../../images/QnA_bg.png);
+    background-size: cover;
+}
+.answer{
+    display: none;
+}

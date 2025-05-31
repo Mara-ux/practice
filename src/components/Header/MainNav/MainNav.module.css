@@ -37,12 +37,13 @@
 .icons {
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 .icons h3{
     font-size: 1.2vw;
 }
 a img{
-    height: 2.5vw;
+    height: 2.8vw;
 }
 .acc{
     cursor: pointer;

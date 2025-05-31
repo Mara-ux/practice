@@ -1,14 +1,27 @@
-.GroupNav{
+.GroupNav {
     display: flex;
     justify-content: space-between;
     font-size: 1vw;
-    p{font-family: Asia;}
-    a{
+
+    p {
+        font-family: Asia;
+        cursor: pointer;
+    }
+
+    a {
         text-decoration: none;
         color: white;
     }
 }
 
-p.active{
-    
+.GroupNav p:hover {
+    color: #FB7E36;
 }
+
+.GroupNav a:hover {
+    color: #FB7E36;
+}
+
+/* p.active{
+    
+} */

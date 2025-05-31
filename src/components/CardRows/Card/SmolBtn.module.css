@@ -1,0 +1,14 @@
+.btn{
+    font-family: pt-b;
+    background-color: #fff;
+    border: .2rem solid #fff;
+    border-radius: .5vw;
+    width: 16.5vw;
+    height: 2.5vw;
+    cursor: pointer;
+    transition: background .2s ease-in-out;
+}
+.btn:hover{
+    background: none;
+    color: #fff;
+}
