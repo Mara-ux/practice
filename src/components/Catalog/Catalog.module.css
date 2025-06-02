@@ -18,6 +18,10 @@
 
 }
 
+.navBar h3.active{
+    color: #FB7E36;
+}
+
 .input_bar {
     display: flex;
     align-items: center;
