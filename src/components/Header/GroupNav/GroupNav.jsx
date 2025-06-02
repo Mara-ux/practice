@@ -1,13 +1,14 @@
 import './GroupNav.module.css'
 import s from './GroupNav.module.css'
+import { NavLink } from 'react-router-dom';
 
 const GroupNav = () => {
     return(
         <div className={s.GroupNav}>
-            <p>Мужские группы</p>
-            <p>Женские группы</p>
-            <a href="">Соло артисты</a>
-            <a href="">Мерч</a>
+            <NavLink to="/catalog">Мужские группы</NavLink>
+            <NavLink to="/catalog">Женские группы</NavLink>
+            <NavLink to="/catalog">Соло артисты</NavLink>
+            <NavLink to="/catalog">Мерч</NavLink>
         </div>
     );
 };

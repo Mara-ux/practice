@@ -1,0 +1,40 @@
+.pop{
+    position: absolute;
+    top: 0;
+    background-color: #101010;
+    padding: 1.5vw 3vw;
+}
+.flexWrapper{
+    display: flex;
+    gap: 4vw;
+}
+
+.sliderWrapper{
+    height: 27vw;
+}
+
+
+.mainInfo{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    h4{
+        font-size: 3.3vw;
+        text-transform: uppercase;
+    }
+    h5{
+        font-size: 2vw;
+        text-transform: uppercase;
+    }
+}
+
+.btns{
+    display: flex;
+}
+
+.block{
+    h5{
+        font-size: 2.5vw;
+        padding-bottom: 2.5vw;
+    }
+}
