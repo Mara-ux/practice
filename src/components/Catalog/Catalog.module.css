@@ -1,0 +1,52 @@
+.mainWrapper {
+    display: flex;
+    padding: 5vw 0;
+    gap: 2vw;
+}
+
+.navBar {
+    padding: 3.7vw 1.3vw;
+    border: .2vw solid rgb(255, 255, 255, .5);
+    border-left: none;
+    border-radius: 0 .5vw .5vw 0;
+
+    h3 {
+        font-size: 1.5vw;
+        padding-bottom: 2vw;
+        cursor: pointer;
+    }
+
+}
+
+.input_bar {
+    display: flex;
+    align-items: center;
+    padding-bottom: 4vw;
+}
+
+.input_bar input {
+    width: 60vw;
+    background: none;
+    border: none;
+    border: .15rem solid #A59D9B;
+    border-radius: .5vw 0 0 .5vw;
+    height: 3vw;
+}
+
+.input_bar input:focus {
+    color: #fff;
+}
+
+.input_bar img {
+    border: .15rem solid #A59D9B;
+    border-radius: 0 .5vw .5vw 0;
+    height: 2vw;
+    padding: .5vw;
+}
+
+.cardWrapper{
+    display: flex;
+    flex-wrap: wrap;
+    width: 64vw;
+    gap: 2vw;
+}

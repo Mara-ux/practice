@@ -1,10 +1,10 @@
 import "./Answer.module.css"
 import s from "./Answer.module.css"
 
-const Answer = (props) => {
+const Answer = ({text, vis}) => {
     return(
-        <div>
-            <p className={s.answer}>{props.text}</p>
+        <div className={`${s.answer} ${vis ? s.visible : ''}`}>
+            {text}
         </div>
     )
 }

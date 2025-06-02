@@ -1,0 +1,13 @@
+.colon {
+    display: flex;
+    flex-direction: column;
+    font-size: 1vw;
+    width: 20vw;
+    text-align: center;
+    align-items: center;
+}
+.colon img{
+    height: 5.2vw;
+    width: 5.2vw;
+    padding-bottom: 2.5vw;
+}

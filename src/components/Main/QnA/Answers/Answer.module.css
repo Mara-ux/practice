@@ -1,4 +1,9 @@
 .answer{
     padding: 4.2vw 5.2vw;
-    font-size: 2vw;
+    font-size: 2.5vw;
+    display: none;
+    font-family: pt-r;
+}
+.answer.visible {
+    display: block;
 }

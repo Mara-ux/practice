@@ -1,10 +1,10 @@
 .btn{
     font-family: pt-b;
+    font-size: 1.3vw;
     background-color: #fff;
-    border: .2rem solid #fff;
+    border: .2vw solid #fff;
     border-radius: .5vw;
-    width: 16.5vw;
-    height: 2.5vw;
+    padding: .5vw 2vw;
     cursor: pointer;
     transition: background .2s ease-in-out;
 }

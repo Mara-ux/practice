@@ -14,11 +14,11 @@ const MainNav = () => {
                 <div className={s.flex_wrapper}>
                     <div className={s.row}>
                         <NavLink to="/about">О нас</NavLink>
-                        <NavLink to="" >Доставка и оплата</NavLink>
+                        <NavLink to="/shipment" >Доставка и оплата</NavLink>
                     </div>
                     <div className={s.row}>
-                        <NavLink to="" >Каталог</NavLink>
-                        <NavLink to="" >Контакты</NavLink>
+                        <NavLink to="/catalog" >Каталог</NavLink>
+                        <NavLink to="/contacts" >Контакты</NavLink>
                     </div>
                 </div>
             </div>

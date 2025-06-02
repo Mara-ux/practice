@@ -1,0 +1,20 @@
+.info{
+    p{
+        padding: 1vw 0;
+    }
+    padding-bottom: 4.5vw;
+    max-width: 79vw;
+    h1{
+        font-size: 3.4vw;
+    }
+}
+.info.left{
+    text-align: left;
+}
+.info.right{
+    text-align: right;
+}
+.list{
+    font-family: pt-r;
+    list-style-type: none;
+}
