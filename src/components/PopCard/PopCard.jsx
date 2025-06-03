@@ -1,26 +1,30 @@
 import "./PopCard.module.css"
 import s from "./PopCard.module.css"
-import temperoriCard from "./../../images/cards/def.png"
+import close from "./../../images/icons/close.png"
 import SmolBtn from './../Main/CardRows/Card/SmolBtn';
 
-const PopCard = (props) => {
+const PopCard = ({ card, onClose }) => {
+    if (!card) return null;
     return (
-        <div className={s.pop}>
+        <div className={s.pop} onClick={e => e.stopPropagation()}>
             <div className={s.flexWrapper}>
+                    <img src={close} alt="" className={s.closeBtn} onClick={onClose}/>
                 <div className={s.sliderWrapper}>
-                    <img src={temperoriCard} alt="" />
+                    <img src={card.img} alt="" />
                 </div>
                 <div className={s.mainInfo}>
                     <div className={s.name}>
-                        <h4>DESIRE : UNLEASH</h4>
-                        <h5>STANDART</h5>
-                        <h5>ENHYPEN</h5>
+                        <h4>{card.name}</h4>
+                        <h5>{card.version}</h5>
+                        <h5>{card.group}</h5>
                     </div>
                     <div className={s.btnwrapper}>
-                        <p className={s.verBtn}>MAKE</p>
+                        <p className={s.verBtn}>{card.inerVersions[0]}</p>
+                        <p className={s.verBtn}>{card.inerVersions[1]}</p>
+                        <p className={s.verBtn}>{card.inerVersions[2]}</p>
                     </div>
                     <div className={s.block}>
-                        <h5>1 800</h5>
+                        <h5>{card.price}</h5>
                         <SmolBtn />
                     </div>
                 </div>
@@ -28,19 +32,17 @@ const PopCard = (props) => {
             <div className={s.otherInfo}>
                 <div className={s.colon}>
                     <h6>Наполнение</h6>
-                    <ul>
-                        <li>фотобук: make ver. (80 стр), you, mine ver (72 стр.)</li>
-                    </ul>
+                    <p>{card.contents}</p>
                 </div>
                 <div className={s.colon}>
                     <h6>подарки за предзаказ</h6>
                     <p>За альбом:</p>
                     <ul>
-                        <li>Рандом карта (1 из 7)</li>
+                        <li>{card.gifts.album}</li>
                     </ul>
                     <p>За сет:</p>
                     <ul>
-                        <li>Рандом карта (3 из 7)</li>
+                        <li>{card.gifts.set}</li>
                     </ul>
                 </div>
             </div>

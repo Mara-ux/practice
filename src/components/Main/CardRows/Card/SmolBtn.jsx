@@ -1,9 +1,11 @@
 import "./SmolBtn.module.css"
 import s from "./SmolBtn.module.css"
 
-const SmolBtn = () => {
+const SmolBtn = ({onClick}) => {
     return(
-        <button className={s.btn}>Добавить в корзину</button>
+        <button className={s.btn} onClick={onClick}>
+            Добавить в корзину
+        </button>
     )
 }
 

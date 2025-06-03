@@ -1,15 +1,17 @@
 .pop{
-    position: absolute;
+    position: fixed;
     top: 1vw;
-    left: 1vw;
-    background-color: #464646;
+    left: 3vw;
+    background-color: #101010;
     padding: 1.5vw 3vw;
-    height: 45vw;
+    height: 43vw;
     width: 86vw;
+    z-index: 1000;
 }
 
-/* #101010 */
+
 .flexWrapper{
+    position: relative;
     display: flex;
     gap: 4vw;
 }
@@ -65,9 +67,22 @@
     }
     ul{
         font-family: pt-r;
-        font-size: 1vw;
+        font-size: 1.2vw;
     }
 }
 .colon{
     padding-right: 5vw;
+    p{
+        font-size: 1vw;
+        max-width: 24vw;
+    }
+}
+
+.closeBtn{
+    position: absolute;
+    right: 2vw;
+    top: 2vw;
+    height: 2vw;
+    width: 2vw;
+    cursor: pointer;
 }

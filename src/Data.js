@@ -21,7 +21,7 @@ const cardInfo = [
         version: "STANDART",
         inerVersions: ["MAKE", "YOU", "MINE"],
         group: "ENHYPEN",
-        price: "От 1 900 р",
+        price: "1 900 р",
         contents: "фотобук: make ver. (80 стр), you, mine ver (72 стр.), CD, сет марок + конверт, сложенный плакат, стикер, сет мини-фото (7 шт.), фотокарточка А (1 из 7 возможных), фотокарточка В (1 из 7 возможных)",
         gifts: {
             album: "Рандом карта (1 из 7)",
@@ -35,9 +35,9 @@ const cardInfo = [
         extraTags: ["hit"],
         name: "BUTTER",
         version: "",
-        inerVersions: ["CREAM", "PEACHES"],
+        inerVersions: ["CREAM", "PEACHES", "RANDOM"],
         group: "BTS",
-        price: "От 2 250 р",
+        price: "2 250 р",
         contents: "Коробка, CD-диск, Фотобук 108с, Карта с лирикой, Полароид, Фотостенд, Месседж карта, Фотокарта (1 из 8)",
         gifts: {
             album: "",
@@ -53,7 +53,7 @@ const cardInfo = [
         version: "STANDART",
         inerVersions: ["A", "DIARY", "Z"],
         group: "ATEEZ",
-        price: "От 2 400 р",
+        price: "2 400 р",
         contents: "CD, фотобук (112 страниц), стикер альбома, конверт, стикер мембера (1 из 8 возможных), открытка (1 из 9 возможных), фотокарточка А (1 из 8 возможных), фотокарточка Z (1 из 8 возможных)",
         gifts: {
             album: "",
@@ -67,7 +67,7 @@ const cardInfo = [
         extraTags: ["sale", "hit"],
         name: "SKZHOP HIPTAPE '合 (HOP)'",
         version: "HIPTAPE",
-        inerVersions: ["", "", ""],
+        inerVersions: [],
         group: "STRAY KIDS",
         price: "2 300 р",
         contents: "CD, фотобук (60 стр.), фотокарточка (1 из 8 возможных), юнитная фотокарточка (1 из 4 возможных), лист наклеек, мини плакат",
@@ -85,7 +85,7 @@ const cardInfo = [
         version: "ENGENE",
         inerVersions: ["RANDOM"],
         group: "ENHYPEN",
-        price: "От 1 350 р",
+        price: "1 350 р",
         contents: "внешний конверт, CD (1 из 7 возможных), CD - кейс, буклет (1 из 7 возможных), сложенный гейм-плакат, набор стикеров (2 шт.), плакат (1 из 7 возможных), карта с персонажем (1 из 7 возможных), фотокарточка А (1 из 7 возможных), фотокарточка В (1 из 7 возможных)",
         gifts: {
             album: "Карта А (1 из 7 возможных), Карта Б (1 из 7 возможных)",
