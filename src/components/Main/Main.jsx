@@ -1,16 +1,14 @@
 import MainSect from './MainSect/MainSect';
-import CardRow1 from './CardRows/CardRow1';
-import CardRow2 from './CardRows/CardRow2';
-import CardRow3 from './CardRows/CardRow3';
+import CardRow from './CardRows/CardRow';
 import QnA from './QnA/QnA';
 
 const Main = () => {
     return (
         <div>
             <MainSect />
-            <CardRow1 title="Хиты продаж" />
-            <CardRow2 title="Новинки" />
-            <CardRow3 title="Скидки" />
+            <CardRow title="Хиты продаж" extraTags="hit"/>
+            <CardRow title="Новинки" extraTags="preorder"/>
+            <CardRow title="Скидки" extraTags="sale"/>
             <QnA title="Частые вопросы" />
         </div>
     );

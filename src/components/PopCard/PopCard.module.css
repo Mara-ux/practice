@@ -1,9 +1,14 @@
 .pop{
     position: absolute;
-    top: 0;
-    background-color: #101010;
+    top: 1vw;
+    left: 1vw;
+    background-color: #464646;
     padding: 1.5vw 3vw;
+    height: 45vw;
+    width: 86vw;
 }
+
+/* #101010 */
 .flexWrapper{
     display: flex;
     gap: 4vw;
@@ -28,13 +33,41 @@
     }
 }
 
-.btns{
+.btnwrapper{
     display: flex;
 }
-
+.verBtn{
+    font-family: pt-b;
+    color: #101010;
+    background-color: rgba(255, 255, 255, .3);
+    border: .3vw solid #fff;
+    font-size: 1.7vw;
+    padding: .5vw 1.6vw;
+    border-radius: .5vw;
+    transition: background-color .2s ease-in-out;
+}
+.verBtn:hover{
+    background-color: rgba(255, 255, 255, 1);
+}
 .block{
     h5{
         font-size: 2.5vw;
-        padding-bottom: 2.5vw;
+        padding-bottom: 1.5vw;
     }
+}
+
+.otherInfo{
+    display: flex;
+    padding-top: 2vw;
+    h6{
+        font-size: 2vw;
+        text-transform: uppercase;
+    }
+    ul{
+        font-family: pt-r;
+        font-size: 1vw;
+    }
+}
+.colon{
+    padding-right: 5vw;
 }
