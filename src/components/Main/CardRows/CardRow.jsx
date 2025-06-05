@@ -11,14 +11,10 @@ const CardRow = (props) => {
     const [isPopoverOpen, setIsPopoverOpen] = useState(false);
 
     const addToCart = (cardId) => {
-        console.log('Кнопка нажата, ID карточки:', cardId); // Добавили лог
         const card = cardInfo.find(c => c.id === cardId);
-            console.log('Найдена карточка:', card); // Проверяем найденную карточку
 
         setSelectedCard(card);
         setIsPopoverOpen(true)
-            console.log('Popover должен открыться'); // Проверяем изменение состояния
-
     }
 
     const closePopover =() =>{

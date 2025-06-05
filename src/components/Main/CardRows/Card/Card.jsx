@@ -4,7 +4,6 @@ import SmolBtn from './SmolBtn';
 
 const Card = ({ id, img, name, version, group, price, onAddToCart }) => {
     const handleAddClick = () => {
-        console.log('Клик по SmolBtn, id:', id); // Добавим лог
         onAddToCart(id);
     };
     return (

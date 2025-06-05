@@ -6,7 +6,7 @@ import SmolBtn from './../Main/CardRows/Card/SmolBtn';
 const PopCard = ({ card, onClose }) => {
     if (!card) return null;
     return (
-        <div className={s.pop} onClick={e => e.stopPropagation()}>
+        <div className={s.pop}>
             <div className={s.flexWrapper}>
                     <img src={close} alt="" className={s.closeBtn} onClick={onClose}/>
                 <div className={s.sliderWrapper}>

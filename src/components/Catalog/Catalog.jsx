@@ -4,6 +4,7 @@ import "./Catalog.module.css"
 import s from "./Catalog.module.css"
 import Search from "./../../images/search.png"
 import cardInfo from './../../Data';
+import PopCard from './../PopCard/PopCard';
 
 
 
@@ -31,7 +32,21 @@ const Catalog = () => {
         return matchesFilter && matchesSearch;
     });
 
-    let cardElements = filteredCards.map(c => <Card img={c.img} name={c.name} version={c.version} group={c.group} price={c.price} />)
+    const [selectedCard, setSelectedCard] = useState(null);
+    const [isPopoverOpen, setIsPopoverOpen] = useState(false);
+
+    const addToCart = (cardId) => {
+        const card = cardInfo.find(c => c.id === cardId);
+
+        setSelectedCard(card);
+        setIsPopoverOpen(true)
+    }
+
+    const closePopover = () => {
+        setIsPopoverOpen(false)
+    }
+
+    let cardElements = filteredCards.map(c => <Card id={c.id} img={c.img} name={c.name} version={c.version} group={c.group} price={c.price} onAddToCart={addToCart} />)
 
     return (
         <div className={s.mainWrapper}>
@@ -44,11 +59,17 @@ const Catalog = () => {
             </div>
             <div className={s.content}>
                 <div className={s.input_bar}>
-                    <input type="text" value={searchTerm} onChange={handleSearchChange}/>
+                    <input type="text" value={searchTerm} onChange={handleSearchChange} />
                     <img onClick={handleSearchClick} src={Search} alt="search" />
                 </div>
                 <div className={s.cardWrapper}>
                     {cardElements}
+                    {isPopoverOpen && (
+                        <div>
+                            <PopCard card={selectedCard}
+                                onClose={closePopover} />
+                        </div>
+                    )}
                 </div>
             </div>
         </div>
