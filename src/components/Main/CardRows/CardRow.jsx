@@ -5,6 +5,8 @@ import cardInfo from '../../../Data';
 import { useState } from 'react';
 import PopCard from './../../PopCard/PopCard';
 
+
+
 const CardRow = (props) => {
 
     const [selectedCard, setSelectedCard] = useState(null);

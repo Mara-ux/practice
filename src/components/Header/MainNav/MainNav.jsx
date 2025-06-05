@@ -5,8 +5,19 @@ import Account from './../../../images/icons/account.png'
 import Cart from './../../../images/icons/cart.png'
 import s from './MainNav.module.css'
 import { NavLink } from 'react-router-dom';
+import { useState } from 'react';
+import LogPopover from './../../Account/LogPopover';
+import RegPopover from './../../Account/RegPopover';
+
+
 
 const MainNav = () => {
+
+    const [activePopover , setActivePopover] = useState(null);
+    const logOpen = () => {setActivePopover("login")}
+    const regOpen = () => {setActivePopover("reg")}
+    const closePopover =() =>{setActivePopover(null)}
+
     return (
         <div className={s.mainNav}>
             <div className={s.wrapper}>
@@ -27,10 +38,20 @@ const MainNav = () => {
                 <img src={Search} alt="search" />
             </div>
             <div className={s.icons}>
-                <img className={s.acc} src={Account} alt="Account" />
-                <a href="#"><img src={Cart} alt="Cart" /></a>
+                <img className={s.acc} src={Account} alt="Account" onClick={logOpen}/>
+                <a ><img src={Cart} alt="Cart" /></a>
                 <h3>0 ₽</h3>
             </div>
+            {activePopover === "login" && (
+                <div>
+                    <LogPopover onClose={closePopover} SwitchToReg={regOpen}/>
+                </div>
+            )}
+            {activePopover === "reg" && (
+                <div>
+                    <RegPopover onClose={closePopover} SwitchToLog={logOpen}/>
+                </div>
+            )}
         </div>
     )
 };

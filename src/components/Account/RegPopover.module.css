@@ -1,0 +1,90 @@
+.popOver {
+    position: fixed;
+    top: 1.5vw;
+    left: calc(50vw - 14vw);
+    background-image: url(./../../images/logBG.png);
+    background-size: cover;
+    height: 40vw;
+    width: 28vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 1vw;
+    h1 {
+        padding-top: 2.8vw;
+        font-size: 1.6vw;
+    }
+}
+
+.wrapper {
+    position: relative;
+}
+
+.closeBtn {
+    position: absolute;
+    right: -1vw;
+    top: 1vw;
+    height: 2vw;
+    cursor: pointer;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 28vw;
+    padding-top: 1vw;
+
+}
+
+.form button {
+    width: 22vw;
+    height: 3.5vw;
+    font-family: Asia;
+    font-size: 1vw;
+    background-color: #D53C25;
+    border: none;
+    border-radius: .5vw;
+    color: #fff;
+    cursor: pointer;
+    border: .2vw solid #D53C25;
+    transition: border .2s ease-in;
+
+}
+
+.form button:hover {
+    border: .2vw solid #fff;
+}
+
+.item {
+    h3 {
+        font-size: 1.3vw;
+        padding-bottom: 1vw;
+    }
+
+    input {
+        background-color: #3F0711;
+        border: none;
+        border-radius: .5vw;
+        width: 22vw;
+        height: 3.5vw;
+        font-size: 1.7vw;
+        font-family: pt-r;
+    }
+}
+
+.texBox {
+    text-align: center;
+    padding-left: 0;
+    padding-top: 1.5vw;
+}
+
+.texBox p {
+    cursor: pointer;
+    opacity: .3;
+    transition: opacity .2s ease-in;
+}
+
+.texBox p:hover {
+    opacity: 1;
+}

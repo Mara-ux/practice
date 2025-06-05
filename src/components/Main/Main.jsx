@@ -2,6 +2,7 @@ import MainSect from './MainSect/MainSect';
 import CardRow from './CardRows/CardRow';
 import QnA from './QnA/QnA';
 
+
 const Main = () => {
     return (
         <div>
