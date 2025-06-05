@@ -3,7 +3,7 @@ import s from "./LogPopover.module.css"
 import close from "./../../images/icons/close.png"
 
 
-const LogPopover = ({onClose, SwitchToReg}) => {
+const LogPopover = ({onClose, SwitchToReg, SwitchToPass}) => {
     return (
         <div className={s.popOver}>
             <div className={s.wrapper}>
@@ -21,7 +21,7 @@ const LogPopover = ({onClose, SwitchToReg}) => {
                 <button type="submit" >ВОЙТИ</button>
             </div>
             <div className={s.texBox}>
-                <p>Забыли пароль?</p>
+                <p onClick={SwitchToPass}>Забыли пароль?</p>
                 <p onClick={SwitchToReg}>Нет аккаунта? Зарегистрироваться</p>
             </div>
             </div>

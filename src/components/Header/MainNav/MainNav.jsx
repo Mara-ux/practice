@@ -8,6 +8,7 @@ import { NavLink } from 'react-router-dom';
 import { useState } from 'react';
 import LogPopover from './../../Account/LogPopover';
 import RegPopover from './../../Account/RegPopover';
+import PasswordPopover from '../../Account/PasswordPopover';
 
 
 
@@ -16,6 +17,7 @@ const MainNav = () => {
     const [activePopover , setActivePopover] = useState(null);
     const logOpen = () => {setActivePopover("login")}
     const regOpen = () => {setActivePopover("reg")}
+    const pasOpen = () => {setActivePopover("pas")}
     const closePopover =() =>{setActivePopover(null)}
 
     return (
@@ -44,12 +46,17 @@ const MainNav = () => {
             </div>
             {activePopover === "login" && (
                 <div>
-                    <LogPopover onClose={closePopover} SwitchToReg={regOpen}/>
+                    <LogPopover onClose={closePopover} SwitchToReg={regOpen} SwitchToPass={pasOpen}/>
                 </div>
             )}
             {activePopover === "reg" && (
                 <div>
                     <RegPopover onClose={closePopover} SwitchToLog={logOpen}/>
+                </div>
+            )}
+            {activePopover === "pas" && (
+                <div>
+                    <PasswordPopover onClose={closePopover} SwitchToReg={regOpen}/>
                 </div>
             )}
         </div>
