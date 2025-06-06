@@ -1,6 +1,7 @@
 import "./RegPopover.module.css"
 import s from "./RegPopover.module.css"
 import close from "./../../images/icons/close.png"
+import { NavLink } from 'react-router-dom';
 
 
 const RegPopover = ({ onClose, SwitchToLog}) => {
@@ -22,7 +23,7 @@ const RegPopover = ({ onClose, SwitchToLog}) => {
                         <h3>Пароль</h3>
                         <input type="password" placeholder="пароль" />
                     </div>
-                    <button type="submit" >Зарегистрироваться</button>
+                    <NavLink to="/account" onClick={onClose} className={s.button}>Зарегистрироваться</NavLink>
                 </div>
                 <div className={s.texBox}>
                     <p onClick={SwitchToLog}>Уже зарегистрированы? Войти</p>

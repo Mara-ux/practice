@@ -1,0 +1,68 @@
+.flexwrapper{
+    display: flex;
+}
+.cardimg{
+    height: 20vw;
+    width: 20vw;
+    border: .2vw solid #FB7E36;
+    border-radius: .5vw;
+    margin-right: 2vw;
+}
+.infowrapper{
+    display: flex;
+    width: 42vw;
+    height: 20vw;
+    justify-content: space-between;
+}
+
+.info{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.text{
+    h4{font-size: 2.8vw;}
+    h5{
+        font-size: 1.8vw;
+        padding-bottom: .4vw;
+    }
+}
+.delit{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    opacity: .4;
+}
+.delit img{
+    height: 3.5vw;
+    padding-right: .5vw;
+}
+
+.price{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    h4{font-size: 3.3vw;}
+}
+
+.pricebtn{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #3F0711;
+    font-size: 2vw;
+    border-radius: .5vw;
+
+}
+.btn{
+    padding: 0 1vw;
+    border-radius: .5vw;
+    background-color: #FB7E36;
+    cursor: pointer;
+}
+.btnmin{
+    padding: 0 1.2vw;
+    border-radius: .5vw;
+    background-color: #FB7E36;
+    cursor: pointer;
+}

@@ -1,0 +1,52 @@
+.title {
+    padding-top: 3.6vw;
+    padding-bottom: 2.6vw;
+    font-size: 2vw;
+}
+
+.flexWrapper {
+    display: flex;
+    padding-bottom: 4vw;
+}
+
+.cardWrapper {
+    width: 64vw;
+    padding-right: 2vw;
+}
+
+.bar {
+    width: 20vw;
+    height: 27vw;
+    background-color: #3F0711;
+    border-radius: .5vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.text {
+    padding: 1.5vw;
+
+    h5 {
+        font-size: 2.8vw;
+    }
+
+    p {
+        font-size: 2.3vw;
+        opacity: .5;
+    }
+}
+
+.box h4 {
+    font-size: 3.3vw;
+    padding: 1.5vw;
+}
+
+.btn {
+    font-family: Asia;
+    font-size: 1.8vw;
+    padding: 1.4vw .7vw;
+    background-color: #FB7E36;
+    border-radius: 0 0 .5vw .5vw;
+    text-align: center;
+}

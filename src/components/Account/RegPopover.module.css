@@ -38,9 +38,8 @@
 
 }
 
-.form button {
-    width: 22vw;
-    height: 3.5vw;
+.button {
+    padding: 1vw 1vw;
     font-family: Asia;
     font-size: 1vw;
     background-color: #D53C25;
@@ -50,10 +49,11 @@
     cursor: pointer;
     border: .2vw solid #D53C25;
     transition: border .2s ease-in;
-
+    text-decoration: none;
+    text-align: center;
 }
 
-.form button:hover {
+.button:hover {
     border: .2vw solid #fff;
 }
 

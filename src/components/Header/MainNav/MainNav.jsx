@@ -41,7 +41,7 @@ const MainNav = () => {
             </div>
             <div className={s.icons}>
                 <img className={s.acc} src={Account} alt="Account" onClick={logOpen}/>
-                <a ><img src={Cart} alt="Cart" /></a>
+                <NavLink to="/cart" ><img src={Cart} alt="Cart" /></NavLink>
                 <h3>0 ₽</h3>
             </div>
             {activePopover === "login" && (
