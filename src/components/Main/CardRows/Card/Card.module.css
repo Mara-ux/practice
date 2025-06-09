@@ -16,19 +16,25 @@
         padding: .2vw 0;
     }
 }
+
 .card img {
     width: 16vw;
     padding-bottom: 1vw;
 }
+
 .card h4 {
     font-size: 1.8vw;
 }
-.price{
-    h4{padding-bottom: 2vw;}
+
+.price {
+    h4 {
+        padding-bottom: 2vw;
+    }
 }
-.popoverBackdrop{
+
+.popoverBackdrop {
     position: fixed;
-        top: 0;
+    top: 0;
     left: 0;
     right: 0;
     bottom: 0;
@@ -37,4 +43,36 @@
     justify-content: center;
     align-items: center;
     z-index: 1000;
+}
+
+@media (max-width:1023px) {
+    .card {
+        width: 34vw;
+        height: 65vw;
+        margin-bottom: 3vw;
+        padding: 1vw 4vw 3vw 4vw;
+    }
+
+    .mainInfo {
+        h4 {
+            font-size: 3vw;
+        }
+
+        h5 {
+            font-size: 2vw;
+            padding: .2vw 0;
+        }
+    }
+
+    .card img {
+        width: 35vw;
+        padding-bottom: 1vw;
+    }
+
+    .price {
+        h4 {
+            font-size: 4vw;
+            padding-bottom: 1.5vw;
+        }
+    }
 }

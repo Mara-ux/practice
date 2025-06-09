@@ -10,5 +10,15 @@
         font-family: pt-r;
         color: #fff;
         text-decoration: none;
+        font-size: 1vw;
+    }
+}
+
+@media (max-width: 1024px) {
+    .colon h6{
+        font-size: 3vw;
+    }
+    .colon a{
+        font-size: 2vw;
     }
 }

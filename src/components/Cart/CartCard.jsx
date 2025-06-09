@@ -1,12 +1,13 @@
 import "./CartCard.module.css"
 import s from "./CartCard.module.css"
 import trash from "./../../images/icons/trash.png"
+import img from "./../../images/cards/def.png"
 
 const CartCard = ({ }) => {
     return (
         <div>
             <div className={s.flexwrapper}>
-                <img className={s.cardimg} src={trash} alt="" />
+                <img className={s.cardimg} src={img} alt="" />
                 <div className={s.infowrapper}>
                     <div className={s.info}>
                         <div className={s.text}>

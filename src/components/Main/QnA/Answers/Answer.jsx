@@ -1,9 +1,9 @@
 import "./Answer.module.css"
 import s from "./Answer.module.css"
 
-const Answer = ({text, vis}) => {
+const Answer = ({text, vis, isMobile}) => {
     return(
-        <div className={`${s.answer} ${vis ? s.visible : ''}`}>
+        <div className={`${s.answer} ${vis ? s.visible : ''} ${isMobile ? s.mobile : ''}`}>
             {text}
         </div>
     )
