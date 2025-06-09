@@ -5,7 +5,8 @@ import s from "./Catalog.module.css"
 import Search from "./../../images/search.png"
 import cardInfo from './../../Data';
 import PopCard from './../PopCard/PopCard';
-
+import close from "./../../images/icons/close.png"
+import filter from "./../../images/icons/filter.png"
 
 
 const Catalog = () => {
@@ -51,6 +52,7 @@ const Catalog = () => {
     return (
         <div className={s.mainWrapper}>
             <div className={s.navBar}>
+                <img src={close} alt="" className={s.closeBTN} />
                 <h3 className={activeFilter === "m" ? s.active : ""} onClick={() => handleFilterClick("m")}>Мужские группы</h3>
                 <h3 className={activeFilter === "f" ? s.active : ""} onClick={() => handleFilterClick("f")}>Женские группы</h3>
                 <h3 className={activeFilter === "s" ? s.active : ""} onClick={() => handleFilterClick("s")}>Соло артисты</h3>
@@ -58,10 +60,12 @@ const Catalog = () => {
                 <h3 className={activeFilter === null ? s.active : ""} onClick={() => handleFilterClick(null)}>Все</h3>
             </div>
             <div className={s.content}>
-                <div className={s.input_bar}>
-                    <input type="text" value={searchTerm} onChange={handleSearchChange} />
-                    <img onClick={handleSearchClick} src={Search} alt="search" />
-                </div>
+                <div className={s.wrapper}>
+                    <img src={filter} alt="" className={s.filter} />
+                    <div className={s.input_bar}>
+                        <input type="text" value={searchTerm} onChange={handleSearchChange} />
+                        <img onClick={handleSearchClick} src={Search} alt="search" />
+                    </div></div>
                 <div className={s.cardWrapper}>
                     {cardElements}
                     {isPopoverOpen && (

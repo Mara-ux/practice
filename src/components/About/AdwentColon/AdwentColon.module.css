@@ -6,8 +6,25 @@
     text-align: center;
     align-items: center;
 }
-.colon img{
+
+.colon img {
     height: 5.2vw;
     width: 5.2vw;
     padding-bottom: 2.5vw;
+}
+
+@media (max-width: 1023px) {
+    .colon {
+        font-size: 1.5vw;
+        width: 40vw;
+        padding-bottom: 3.5vw;
+
+    }
+
+    .colon img {
+        height: 10vw;
+        width: 10vw;
+        padding-bottom: 2.5vw;
+    }
+
 }

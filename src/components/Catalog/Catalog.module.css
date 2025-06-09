@@ -4,11 +4,16 @@
     gap: 2vw;
 }
 
+.wrapper {
+    display: flex;
+}
+
 .navBar {
     padding: 3.7vw 1.3vw;
     border: .2vw solid rgb(255, 255, 255, .5);
     border-left: none;
     border-radius: 0 .5vw .5vw 0;
+    position: relative;
 
     h3 {
         font-size: 1.5vw;
@@ -18,7 +23,7 @@
 
 }
 
-.navBar h3.active{
+.navBar h3.active {
     color: #FB7E36;
 }
 
@@ -48,9 +53,83 @@
     padding: .5vw;
 }
 
-.cardWrapper{
+.cardWrapper {
     display: flex;
     flex-wrap: wrap;
     width: 64vw;
     gap: 2vw;
+}
+
+.closeBTN {
+    display: none;
+
+}
+
+.filter {
+    display: none;
+}
+
+@media (max-width:1023px) {
+    .navBar {
+        position: absolute;
+        z-index: 100;
+        padding: 3vw 1.3vw;
+        border: .5vw solid rgb(255, 255, 255, .5);
+        border-left: none;
+        border-radius: 0 .5vw .5vw 0;
+        background-color: #3F0711;
+        transform: translateX(-100%);
+
+        h3 {
+            font-size: 3vw;
+            padding-bottom: 2vw;
+            cursor: pointer;
+        }
+    }
+
+    .closeBTN {
+        display: block;
+        height: 4vw;
+        padding-bottom: 4vw;
+    }
+
+    .cardWrapper {
+        display: flex;
+        flex-wrap: wrap;
+        width: 90vw;
+        gap: 2vw;
+        padding-left: 4vw;
+    }
+
+    .input_bar {
+        padding-left: 2vw;
+    }
+
+    .input_bar input {
+        width: 70vw;
+        background: none;
+        border: none;
+        border: .15rem solid #A59D9B;
+        border-radius: 1vw 0 0 1vw;
+        height: 7vw;
+        font-size: 1.5vw;
+    }
+
+    .input_bar img {
+        border: .15rem solid #A59D9B;
+        border-radius: 0 1vw 1vw 0;
+        height: 6vw;
+        padding: .5vw;
+    }
+
+    .filter {
+        display: block;
+        height: 7vw;
+        width: 7vw;
+    }
+
+    .wrapper {
+        display: flex;
+        padding-left: 3vw;
+    }
 }
