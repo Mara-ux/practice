@@ -1,44 +1,50 @@
-.pop{
+.pop {
     position: fixed;
     top: 1vw;
-    left: 3vw;
+    left: calc(50% - 40vw);
     background-color: #101010;
     padding: 1.5vw 3vw;
-    height: 43vw;
-    width: 86vw;
+    height: 90vh;
+    width: 75vw;
     z-index: 1000;
 }
 
-
-.flexWrapper{
+.flexWrapper {
     position: relative;
     display: flex;
     gap: 4vw;
 }
 
-.sliderWrapper{
+.sliderWrapper {
     height: 27vw;
+    padding: 0vw 2vw;
 }
 
+.pic {
+    height: 25vw;
+}
 
-.mainInfo{
+.mainInfo {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    h4{
+
+    h4 {
         font-size: 3.3vw;
         text-transform: uppercase;
     }
-    h5{
+
+    h5 {
         font-size: 2vw;
         text-transform: uppercase;
     }
 }
 
-.btnwrapper{
+.btnwrapper {
     display: flex;
 }
-.verBtn{
+
+.verBtn {
     font-family: pt-b;
     color: #101010;
     background-color: rgba(255, 255, 255, .3);
@@ -47,42 +53,128 @@
     padding: .5vw 1.6vw;
     border-radius: .5vw;
     transition: background-color .2s ease-in-out;
+    margin-right: 1vw;
+    cursor: pointer;
 }
-.verBtn:hover{
+
+.verBtn:hover {
     background-color: rgba(255, 255, 255, 1);
 }
-.block{
-    h5{
+
+.block {
+    h5 {
         font-size: 2.5vw;
         padding-bottom: 1.5vw;
     }
 }
 
-.otherInfo{
+.otherInfo {
     display: flex;
     padding-top: 2vw;
-    h6{
+
+    h6 {
         font-size: 2vw;
         text-transform: uppercase;
     }
-    ul{
+
+    ul {
         font-family: pt-r;
         font-size: 1.2vw;
     }
 }
-.colon{
+
+.colon {
     padding-right: 5vw;
-    p{
-        font-size: 1vw;
-        max-width: 24vw;
-    }
+
+}
+.colon.pobs {
+    display: block;
+}
+.info{
+    font-size: 1vw;
+    max-width: 24vw;
+}
+.pobsText {
+    font-size: 1.5vw;
+    font-family: pt-b;
 }
 
-.closeBtn{
+.closeBtn {
     position: absolute;
-    right: 2vw;
-    top: 2vw;
+    right: -1vw;
+    top: 1vw;
     height: 2vw;
     width: 2vw;
     cursor: pointer;
+}
+.backdrop{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #000;
+    opacity: .7;
+    height: 100vh;
+    width: 100vw;
+}
+@media (max-width: 1023px) {
+
+.pop {
+    height: 95vh;
+    display: flex;
+    flex-direction: column;
+    gap: 3vh;
+}
+.flexWrapper {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 4vw;
+}
+.sliderWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 3vh;
+    height: 30vh;
+}
+
+.pic {
+    height: 35vh;
+}
+
+.mainInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 35vh;
+
+    h4 {
+        font-size: 5vw;
+        text-transform: uppercase;
+    }
+
+    h5 {
+        font-size: 4vw;
+        text-transform: uppercase;
+    }
+}
+.verBtn{
+    font-size: 3.5vw;
+}
+.otherInfo {
+    h6 {
+        font-size: 4vw;
+    }
+    ul {
+        font-size: 2vw;
+    }
+}
+.info{
+    font-size: 3vw;
+    max-width: 70vw;
+}
+.colon.pobs {
+    display: none;
+}
+
 }
