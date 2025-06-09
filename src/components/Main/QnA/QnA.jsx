@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import "./QnA.module.css"
 import s from './QnA.module.css'
 import Btn from './Btns/Btn';
@@ -19,32 +19,78 @@ const answers = [
 
 const QnA = (props) => {
     const [activeAnswerIndex, setActiveAnswerIndex] = useState(null);
+    const [isMobile, setIsMobile] = useState(false);
+    
+    useEffect(() => {
+        const handleResize = () => {
+            setIsMobile(window.innerWidth < 1024);
+        };
 
-    const mouseEnter = (i) => {setActiveAnswerIndex(i)}
-    const mouseLeave = () => {setActiveAnswerIndex(null)};
+        handleResize();
+        window.addEventListener('resize', handleResize);
+        return () => window.removeEventListener('resize', handleResize);
+    }, []);
+
+    const handleQuestionClick = (index) => {
+        if (isMobile) {
+            setActiveAnswerIndex(activeAnswerIndex === index ? null : index);
+        }
+    };
+    const mouseEnter = (i) => {
+        if (!isMobile) {
+            setActiveAnswerIndex(i);
+        }
+    }
+    const mouseLeave = () => {
+        if (!isMobile) {
+            setActiveAnswerIndex(null);
+        }
+    };
 
 
     return (
         <section>
             <h2>{props.title}</h2>
             <div className={s.wrapper}>
-                <div className={s.btn_wrapper}>
-                    {btnInfo.map((b, i) => (
-                        <Btn
-                            name={b.name}
-                            onMouseEnter={() => mouseEnter(i)}
-                            onMouseLeave={mouseLeave}
-                        />
-                    ))}
-                </div>
-                <div className={s.answers_wrapper}>
-                    {answers.map((a, i) => (
-                        <Answer 
-                            text={a}
-                            vis={activeAnswerIndex === i}
-                        />
-                    ))}
-                </div>
+                {isMobile ? (
+                    <div className={s.mobileContainer}>
+                        {btnInfo.map((btn, index) => (
+                            <div key={btn.id} className={s.mobileQuestion}>
+                                <Btn
+                                    name={btn.name}
+                                    onClick={() => handleQuestionClick(index)}
+                                    isActive={activeAnswerIndex === index}
+                                />
+                                <Answer 
+                                    text={answers[index]}
+                                    vis={activeAnswerIndex === index}
+                                />
+                            </div>
+                        ))}
+                    </div>
+                ) : (
+                    <>
+                        <div className={s.btn_wrapper}>
+                            {btnInfo.map((btn, index) => (
+                                <Btn
+                                    key={btn.id}
+                                    name={btn.name}
+                                    onMouseEnter={() => mouseEnter(index)}
+                                    onMouseLeave={mouseLeave}
+                                />
+                            ))}
+                        </div>
+                        <div className={s.answers_wrapper}>
+                            {answers.map((answer, index) => (
+                                <Answer 
+                                    key={index}
+                                    text={answer}
+                                    vis={activeAnswerIndex === index}
+                                />
+                            ))}
+                        </div>
+                    </>
+                )}
             </div>
         </section>
     );

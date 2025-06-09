@@ -19,3 +19,29 @@
 .answer{
     display: none;
 }
+
+@media (max-width: 1023px) {
+    .wrapper {
+        flex-direction: column;
+        padding: 8vw 5vw;
+    }
+
+    .btn_wrapper {
+        width: 100%;
+        height: auto;
+        margin-bottom: 5vw;
+    }
+
+    .answers_wrapper {
+        width: 100%;
+        height: auto;
+        min-height: 50vw;
+        background-position: center;
+    }
+
+    .btn_wrapper {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 2vw;
+    }
+}

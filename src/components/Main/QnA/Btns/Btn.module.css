@@ -12,3 +12,20 @@
     border: .2rem solid #D53C25;
     background-color: #D53C25;
 }
+
+@media (max-width: 1023px) {
+    .btn {
+        font-size: 3vw;
+        padding: 2vw;
+        border-radius: 0.5vw;
+        width: 100%;
+        margin-bottom: 1vw;
+    }
+
+    .btn.active,
+    .btn:active {
+        border: 0.2rem solid #D53C25;
+        background-color: #D53C25;
+        color: white;
+    }
+}
