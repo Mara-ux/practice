@@ -10,7 +10,7 @@ import filter from "./../../images/icons/filter.png"
 
 
 const Catalog = () => {
-
+    const [isVisible, setIsVisible] = useState(false)
     const [activeFilter, setActiveFilter] = useState(null)
     const [searchTerm, setSearchTerm] = useState("")
 
@@ -51,17 +51,24 @@ const Catalog = () => {
 
     return (
         <div className={s.mainWrapper}>
-            <div className={s.navBar}>
-                <img src={close} alt="" className={s.closeBTN} />
+            <div className={`${s.navBar} ${isVisible ? s.active : ''}`}>
+                <img src={close} alt="" 
+                    onClick={() => setIsVisible(!isVisible)}
+                    className={s.closeBTN} 
+                />
                 <h3 className={activeFilter === "m" ? s.active : ""} onClick={() => handleFilterClick("m")}>Мужские группы</h3>
                 <h3 className={activeFilter === "f" ? s.active : ""} onClick={() => handleFilterClick("f")}>Женские группы</h3>
                 <h3 className={activeFilter === "s" ? s.active : ""} onClick={() => handleFilterClick("s")}>Соло артисты</h3>
                 <h3 className={activeFilter === "mr" ? s.active : ""} onClick={() => handleFilterClick("mr")}>Мерч</h3>
                 <h3 className={activeFilter === null ? s.active : ""} onClick={() => handleFilterClick(null)}>Все</h3>
             </div>
+            <div className={`${s.backdrop} ${isVisible ? s.active : ''}`}></div>
             <div className={s.content}>
                 <div className={s.wrapper}>
-                    <img src={filter} alt="" className={s.filter} />
+                    <img src={filter} alt="" 
+                        onClick={() => setIsVisible(!isVisible)}
+                        className={s.filter} 
+                    />
                     <div className={s.input_bar}>
                         <input type="text" value={searchTerm} onChange={handleSearchChange} />
                         <img onClick={handleSearchClick} src={Search} alt="search" />
