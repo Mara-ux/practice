@@ -13,7 +13,7 @@ import Cart from './components/Cart/Cart';
 
 const App = () => {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <div className="body">
         <Header />
         <Routes>
@@ -28,7 +28,7 @@ const App = () => {
         </Routes>
         <Footer />
       </div>
-    </BrowserRouter>
+    </HashRouter>
 
   );
 }
