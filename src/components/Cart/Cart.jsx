@@ -4,7 +4,7 @@ import CartCard from './CartCard';
 
 const Cart = () => {
     return (
-        <section>
+        <section className={s.sect}>
             <h1 className={s.title}>Корзина</h1>
             <div className={s.flexWrapper}>
                 <div className={s.cardWrapper}>

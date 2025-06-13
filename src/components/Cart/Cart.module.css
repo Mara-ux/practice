@@ -1,3 +1,7 @@
+.sect {
+    min-height: 100vh;
+}
+
 .title {
     padding-top: 3.6vw;
     padding-bottom: 2.6vw;
@@ -49,4 +53,70 @@
     background-color: #FB7E36;
     border-radius: 0 0 .5vw .5vw;
     text-align: center;
+            cursor: pointer;
+}
+
+@media (max-width:1023px) {
+    .sect {
+        min-height: 100vh;
+    }
+
+    .title {
+        padding-top: 3.6vw;
+        padding-bottom: 2.6vw;
+        font-size: 6vw;
+    }
+
+    .flexWrapper {
+        display: flex;
+        padding-bottom: 4vw;
+        flex-direction: column;
+        justify-content: space-between;
+        min-height: 70vh;
+    }
+
+    .cardWrapper {
+        width: 80vw;
+        padding-right: 0vw;
+        padding-bottom: 7vw;
+    }
+
+    .bar {
+        width: 80vw;
+        height: 20vw;
+        background-color: #3F0711;
+        border-radius: .5vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .text {
+        padding: 1.5vw;
+
+        h5 {
+            font-size: 4vw;
+        }
+
+        p {
+            font-size: 3vw;
+            opacity: .5;
+        }
+    }
+
+    .box h4 {
+        font-size: 5vw;
+        padding: 1.5vw;
+    }
+
+    .btn {
+        font-family: Asia;
+        font-size: 5vw;
+        padding: 2vw .7vw;
+        background-color: #FB7E36;
+        border-radius: 0 0 .5vw .5vw;
+        text-align: center;
+        cursor: pointer;
+    }
+
 }

@@ -22,6 +22,8 @@
     color: #FB7E36;
 }
 
-/* p.active{
-    
-} */
+@media (max-width: 1023px) {
+    .GroupNav{
+        display: none;
+    }
+}

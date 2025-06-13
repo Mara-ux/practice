@@ -66,3 +66,83 @@
     background-color: #FB7E36;
     cursor: pointer;
 }
+
+@media (max-width:1023px){
+    .flexwrapper{
+    display: flex;
+}
+.cardimg{
+    height: 30vw;
+    width: 30vw;
+    border: .2vw solid #FB7E36;
+    border-radius: .5vw;
+    margin-right: 2vw;
+}
+.infowrapper{
+    display: flex;
+    flex-direction: column;
+    width: 55vw;
+    height: 35vw;
+    justify-content: space-between;
+}
+
+.info{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.text{
+    h4{font-size: 4vw;
+    padding-bottom: 2vw;}
+    h5{
+        font-size: 2vw;
+        padding-bottom: 1vw;
+    }
+}
+.delit{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    opacity: .4;
+    
+}
+.delit img{
+    height: 5vw;
+    padding-right: .5vw;
+}
+
+.price{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    h4{font-size: 5vw;
+        padding-bottom: 2vw;}
+
+}
+
+.pricebtn{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #3F0711;
+    font-size: 5vw;
+    border-radius: .5vw;
+    width: 20vw;
+}
+.btn{
+    padding: 0 1vw;
+    border-radius: .5vw;
+    background-color: #FB7E36;
+    cursor: pointer;
+    font-size: 7vw;
+}
+.btnmin{
+    padding: 0 1.2vw;
+    border-radius: .5vw;
+    background-color: #FB7E36;
+    cursor: pointer;
+        font-size: 7vw;
+
+}
+
+}
