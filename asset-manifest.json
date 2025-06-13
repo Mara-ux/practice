@@ -1,0 +1,36 @@
+{
+  "files": {
+    "main.css": "/practice/static/css/main.b14734ba.css",
+    "main.js": "/practice/static/js/main.19182cb4.js",
+    "static/js/453.07b51e5c.chunk.js": "/practice/static/js/453.07b51e5c.chunk.js",
+    "static/media/main.png": "/practice/static/media/main.27321863e98f666f11dc.png",
+    "static/media/QnA_bg.png": "/practice/static/media/QnA_bg.4c6ee366b126906eaf03.png",
+    "static/media/image-10.png": "/practice/static/media/image-10.8f8d3910213cd4a3054f.png",
+    "static/media/mainMob.png": "/practice/static/media/mainMob.9fe681e71dbf52a62f19.png",
+    "static/media/logBG.png": "/practice/static/media/logBG.6774be6bb83b9b80a872.png",
+    "static/media/image-9.png": "/practice/static/media/image-9.d2029ec70cc32db90235.png",
+    "static/media/image-5.png": "/practice/static/media/image-5.c3e4d24119a7b8a1d715.png",
+    "static/media/image-2.png": "/practice/static/media/image-2.976c78713bda02b7275c.png",
+    "static/media/image-6.png": "/practice/static/media/image-6.bc4a6dfdc8a57843a035.png",
+    "static/media/PT-Astra-Serif_Bold.ttf": "/practice/static/media/PT-Astra-Serif_Bold.b7e40410b2e5fce228d9.ttf",
+    "static/media/image-3.png": "/practice/static/media/image-3.b62c9e4636ab238eea54.png",
+    "static/media/PT-Astra-Serif_Regular.ttf": "/practice/static/media/PT-Astra-Serif_Regular.3c79353ffcceb085dc91.ttf",
+    "static/media/bg.png": "/practice/static/media/bg.1b9970462db919dc40ec.png",
+    "static/media/image-1.png": "/practice/static/media/image-1.640630dd42096c7dbfba.png",
+    "static/media/def.png": "/practice/static/media/def.ffe6e970c880b880acb6.png",
+    "static/media/image-8.png": "/practice/static/media/image-8.2639cc5d15ef1656a64d.png",
+    "static/media/image.png": "/practice/static/media/image.dfbeda95d3f897da951f.png",
+    "static/media/image-4.png": "/practice/static/media/image-4.c59b7112734cabb6bea0.png",
+    "static/media/image-7.png": "/practice/static/media/image-7.2d7d494a0a933e267fda.png",
+    "static/media/StalinistOne-Regular.ttf": "/practice/static/media/StalinistOne-Regular.044c829d9e2e9ff9b04f.ttf",
+    "static/media/logo.png": "/practice/static/media/logo.ef0ef1bccdee5ef361cc.png",
+    "index.html": "/practice/index.html",
+    "main.b14734ba.css.map": "/practice/static/css/main.b14734ba.css.map",
+    "main.19182cb4.js.map": "/practice/static/js/main.19182cb4.js.map",
+    "453.07b51e5c.chunk.js.map": "/practice/static/js/453.07b51e5c.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b14734ba.css",
+    "static/js/main.19182cb4.js"
+  ]
+}
