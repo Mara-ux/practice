@@ -171,3 +171,24 @@
         padding-bottom: 2vw;
     }
 }
+
+@media (max-width: 481px) {
+    .popOver {
+        top: 2.5vw;
+        left: calc(50vw - 30vw);
+        height: 35vh;
+        width: 60vw;
+        border-radius: 3vw;
+    }
+
+    .form {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 20vh;
+        padding-top: 3vw;
+
+    }
+
+}
+

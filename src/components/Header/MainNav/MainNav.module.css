@@ -116,7 +116,7 @@ a img {
     }
 
     .input_bar input {
-        width: 45vw;
+        width: 50vw;
         background: none;
         border: none;
         border: .15rem solid #A59D9B;
@@ -140,6 +140,7 @@ a img {
         display: flex;
         flex-direction: column;
         height: 100vh;
+        width: 40vw;
         z-index: 1000;
         transform: translateX(100%);
         transition: all .2s ease-in;
@@ -165,12 +166,12 @@ a img {
     }
 
     .flex_wrapper a {
-        font-size: 2vw;
+        font-size: 3.5vw;
         color: #fff;
         text-decoration: none;
         height: auto;
-        max-width: 20vw;
-        padding-bottom: 1vw;
+        max-width: 30vw;
+        padding-bottom: 2vw;
     }
 
     #logo {
@@ -181,6 +182,7 @@ a img {
         display: flex;
         align-items: center;
         justify-content: center;
+        gap: 4vw;
     }
 
     .icons h3 {
@@ -188,11 +190,11 @@ a img {
     }
 
     a img {
-        height: 5vw;
+        height: 7vw;        
     }
 
     .acc {
         cursor: pointer;
-        height: 6.5vw;
+        height: 10vw;
     }
 }

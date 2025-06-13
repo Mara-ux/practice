@@ -87,13 +87,16 @@
     padding-right: 5vw;
 
 }
+
 .colon.pobs {
     display: block;
 }
-.info{
+
+.info {
     font-size: 1vw;
     max-width: 24vw;
 }
+
 .pobsText {
     font-size: 1.5vw;
     font-family: pt-b;
@@ -107,7 +110,8 @@
     width: 2vw;
     cursor: pointer;
 }
-.backdrop{
+
+.backdrop {
     position: fixed;
     top: 0;
     left: 0;
@@ -116,65 +120,81 @@
     height: 100vh;
     width: 100vw;
 }
+
 @media (max-width: 1023px) {
 
-.pop {
-    height: 95vh;
-    display: flex;
-    flex-direction: column;
-    gap: 3vh;
-}
-.flexWrapper {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    gap: 4vw;
-}
-.sliderWrapper {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-bottom: 3vh;
-    height: 30vh;
-}
-
-.pic {
-    height: 35vh;
-}
-
-.mainInfo {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 35vh;
-
-    h4 {
-        font-size: 5vw;
-        text-transform: uppercase;
+    .pop {
+        height: 95vh;
+        display: flex;
+        flex-direction: column;
+        gap: 3vh;
     }
 
-    h5 {
-        font-size: 4vw;
-        text-transform: uppercase;
+    .flexWrapper {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        gap: 4vw;
     }
-}
-.verBtn{
-    font-size: 3.5vw;
-}
-.otherInfo {
-    h6 {
-        font-size: 4vw;
-    }
-    ul {
-        font-size: 2vw;
-    }
-}
-.info{
-    font-size: 3vw;
-    max-width: 70vw;
-}
-.colon.pobs {
-    display: none;
-}
 
+    .sliderWrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 3vh;
+        height: 30vh;
+    }
+
+    .pic {
+        height: 35vh;
+    }
+
+    .mainInfo {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 35vh;
+
+        h4 {
+            font-size: 5vw;
+            text-transform: uppercase;
+        }
+
+        h5 {
+            font-size: 4vw;
+            text-transform: uppercase;
+        }
+    }
+
+    .verBtn {
+        font-size: 3.5vw;
+    }
+
+    .otherInfo {
+        h6 {
+            font-size: 4vw;
+        }
+
+        ul {
+            font-size: 2vw;
+        }
+    }
+
+    .info {
+        font-size: 3vw;
+        max-width: 70vw;
+    }
+
+    .colon.pobs {
+        display: none;
+    }
+
+    .closeBtn {
+        position: absolute;
+        right: -1vw;
+        top: 1vw;
+        height: 7vw;
+        width: 7vw;
+        cursor: pointer;
+    }
 }
