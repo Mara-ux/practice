@@ -2,9 +2,13 @@ import "./PopCard.module.css"
 import s from "./PopCard.module.css"
 import close from "./../../images/icons/close.png"
 import SmolBtn from './../Main/CardRows/Card/SmolBtn';
+import { useCart } from "../Cart/CartContext";
 
-
-const PopCard = ({ card, onClose }) => {
+const PopCard = ({ card, onClose}) => {
+    const {addToCart} = useCart()
+    const handleAddToCart = () => {
+        addToCart(card.id)
+    }
     if (!card) return null;
     return (
         <div>
@@ -27,7 +31,7 @@ const PopCard = ({ card, onClose }) => {
                         </div>
                         <div className={s.block}>
                             <h5>{card.price}</h5>
-                            <SmolBtn />
+                            <button className={s.btn} onClick={handleAddToCart}>Добавить в корзину</button>
                         </div>
                     </div>
                 </div>

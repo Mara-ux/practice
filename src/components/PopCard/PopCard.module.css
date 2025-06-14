@@ -120,6 +120,21 @@
     height: 100vh;
     width: 100vw;
 }
+.btn {
+    font-family: pt-b;
+    font-size: 1.3vw;
+    background-color: #fff;
+    border: .2vw solid #fff;
+    border-radius: .5vw;
+    padding: .5vw 2vw;
+    cursor: pointer;
+    transition: background .2s ease-in-out;
+}
+
+.btn:hover {
+    background: none;
+    color: #fff;
+}
 
 @media (max-width: 1023px) {
 
@@ -196,5 +211,8 @@
         height: 7vw;
         width: 7vw;
         cursor: pointer;
+    }
+    .btn {
+        font-size: 3vw;
     }
 }
