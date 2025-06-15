@@ -8,6 +8,7 @@ const PopCard = ({ card, onClose}) => {
     const {addToCart} = useCart()
     const handleAddToCart = () => {
         addToCart(card.id)
+        onClose()
     }
     if (!card) return null;
     return (
