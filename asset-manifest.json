@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/practice/static/css/main.38ea9230.css",
-    "main.js": "/practice/static/js/main.07b35878.js",
+    "main.css": "/practice/static/css/main.657dda94.css",
+    "main.js": "/practice/static/js/main.6dfa64e0.js",
     "static/js/453.07b51e5c.chunk.js": "/practice/static/js/453.07b51e5c.chunk.js",
     "static/media/main.png": "/practice/static/media/main.27321863e98f666f11dc.png",
     "static/media/QnA_bg.png": "/practice/static/media/QnA_bg.4c6ee366b126906eaf03.png",
@@ -25,12 +25,12 @@
     "static/media/StalinistOne-Regular.ttf": "/practice/static/media/StalinistOne-Regular.044c829d9e2e9ff9b04f.ttf",
     "static/media/logo.png": "/practice/static/media/logo.ef0ef1bccdee5ef361cc.png",
     "index.html": "/practice/index.html",
-    "main.38ea9230.css.map": "/practice/static/css/main.38ea9230.css.map",
-    "main.07b35878.js.map": "/practice/static/js/main.07b35878.js.map",
+    "main.657dda94.css.map": "/practice/static/css/main.657dda94.css.map",
+    "main.6dfa64e0.js.map": "/practice/static/js/main.6dfa64e0.js.map",
     "453.07b51e5c.chunk.js.map": "/practice/static/js/453.07b51e5c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.38ea9230.css",
-    "static/js/main.07b35878.js"
+    "static/css/main.657dda94.css",
+    "static/js/main.6dfa64e0.js"
   ]
 }
