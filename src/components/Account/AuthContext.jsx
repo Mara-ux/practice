@@ -4,7 +4,10 @@ import usersData from './../../UserData';
 const AuthContext = createContext();
 
 export function AuthProvider({ children }) {
-  const [currentUser, setCurrentUser] = useState(null);
+  const [currentUser, setCurrentUser] = useState(() => {
+    const savedUser = localStorage.getItem('currentUser');
+    return savedUser ? JSON.parse(savedUser) : null;
+  });
   const [authError, setAuthError] = useState(null);
 
   const login = (email, password) => {
@@ -14,6 +17,7 @@ export function AuthProvider({ children }) {
       return false;
     }
     setCurrentUser(user);
+    localStorage.setItem('currentUser', JSON.stringify(user));
     setAuthError(null);
     return true;
   };
@@ -25,6 +29,7 @@ export function AuthProvider({ children }) {
     }
     const newUser = usersData.addUser(userData);
     setCurrentUser(newUser);
+    localStorage.setItem('currentUser', JSON.stringify(newUser));
     setAuthError(null);
     return true;
   };
@@ -44,11 +49,13 @@ export function AuthProvider({ children }) {
     if (!currentUser) return false;
     const updatedUser = usersData.updateUser(currentUser.id, updates);
     setCurrentUser(updatedUser);
+    localStorage.setItem('currentUser', JSON.stringify(updatedUser));
     return true;
   };
 
   const logout = () => {
     setCurrentUser(null);
+    localStorage.removeItem('currentUser');
   };
 
   return (

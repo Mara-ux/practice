@@ -3,17 +3,22 @@ import s from "./LogPopover.module.css"
 import close from "./../../images/icons/close.png"
 import { useState } from 'react';
 import { useAuth } from './AuthContext';
+import { useNavigate } from 'react-router-dom';
+
 
 const LogPopover = ({onClose, SwitchToReg, SwitchToPass}) => {
     
     const [email, setEmail] = useState('')
     const [password, setPassword] = useState('')
     const { login, authError, setAuthError } = useAuth();
-    
+    const navigate = useNavigate();
+
+
     const handleSubmit = (e) => {
         e.preventDefault();
         if (login(email, password)) {
             onClose()
+            navigate('/account')
         }
     }
 
