@@ -73,11 +73,12 @@
         font-size: 1.7vw;
         font-family: pt-r;
         color: #fff;
+        margin: 0;
 
     }
 }
 
-.texBox {
+A .texBox {
     text-align: center;
     padding-left: 0;
     padding-top: 1.5vw;

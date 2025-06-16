@@ -74,7 +74,7 @@ a img {
 .input_bar {
     display: flex;
     align-items: center;
-
+    justify-content: center;
 }
 
 .input_bar input {
@@ -84,6 +84,7 @@ a img {
     border: .15rem solid #A59D9B;
     border-radius: .5vw 0 0 .5vw;
     height: 3vw;
+    margin-top: 0;
 }
 
 .input_bar input:focus {

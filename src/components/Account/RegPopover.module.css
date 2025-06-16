@@ -136,6 +136,7 @@
         cursor: pointer;
         border: .6vw solid #D53C25;
         transition: border .2s ease-in;
+        margin-top: 2vw;
 
     }
 
@@ -147,7 +148,7 @@
         h3 {
             font-size: 3vw;
         }
-
+        margin-top: 1vw;
         input {
             background-color: #3F0711;
             border: none;
@@ -157,7 +158,7 @@
             font-size: 3vw;
             font-family: pt-r;
             color: #fff;
-
+            margin: 0;
         }
     }
 

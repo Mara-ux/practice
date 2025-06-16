@@ -2,6 +2,23 @@
     display: flex;
 }
 
+.btn {
+    font-family: Asia;
+    color: #fff;
+    background-color: #D53C25;
+    border: #D53C25 .2vw solid;
+    padding: 1vw 3vw;
+    margin-top: 1vw;
+    border-radius: .5vw;
+    margin-top: 2vw;
+    transition: all .2s ease-in;
+    margin-right: 1vw;
+}
+
+.btn:hover {
+    border: #fff .2vw solid;
+}
+
 .bar {
     padding: 2vw 2vw 0 7.3vw;
     background-color: #3F0711;
@@ -12,8 +29,11 @@
 }
 
 .bar ul {
+    margin-top: 2vw;
     font-family: pt-r;
     font-size: 2.5vw;
+    list-style: none;
+
 }
 
 .ifo {
@@ -30,6 +50,8 @@
         padding-bottom: 1vw;
     }
 
+    display: flex;
+    flex-direction: column;
     padding-bottom: 3.6vw;
 }
 
@@ -39,6 +61,27 @@
     padding-bottom: .5vw;
     list-style-type: none;
     padding-left: 2vw;
+}
+
+.error {
+    min-height: 100vh;
+    text-align: center;
+    padding-top: 10vh;
+    font-family: Asia;
+    font-size: 4vw;
+}
+
+input {
+    background-color: #3F0711;
+    border: none;
+    border-radius: .5vw;
+    width: 100%;
+    height: 3.5vw;
+    font-size: 1.7vw;
+    font-family: pt-r;
+    color: #fff;
+    margin-top: 1vw;
+
 }
 
 @media (max-width:1023px) {
@@ -90,4 +133,16 @@
         list-style-type: none;
         padding-left: 2vw;
     }
+    input {
+    background-color: #3F0711;
+    border: none;
+    border-radius: .5vw;
+    width: 70vw;
+    height: 6vw;
+    font-size: 4vw;
+    font-family: pt-r;
+    color: #fff;
+    margin-top: 3vw;
+
+}
 }
