@@ -3,7 +3,6 @@ import s from "./Cart.module.css"
 import CartCard from './CartCard';
 import { useCart } from './CartContext';
 
-
 const Cart = () => {
     const { cartItem, totalPrice, itemsCount, clearCart } = useCart();
 

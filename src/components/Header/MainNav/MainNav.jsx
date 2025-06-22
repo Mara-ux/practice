@@ -11,8 +11,6 @@ import LogPopover from './../../Account/LogPopover';
 import RegPopover from './../../Account/RegPopover';
 import PasswordPopover from '../../Account/PasswordPopover';
 
-
-
 const MainNav = () => {
     const [isVisible, setIsVisible] = useState(false)
     const [activePopover, setActivePopover] = useState(null);
@@ -30,7 +28,6 @@ const MainNav = () => {
         window.addEventListener('resize', handleResize)
         return () => window.removeEventListener('resize', handleResize)
     }, [])
-
 
     return (
         <div className={s.mainNav}>

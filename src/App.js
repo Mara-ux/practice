@@ -12,7 +12,6 @@ import Cart from './components/Cart/Cart';
 import { CartProvider } from './components/Cart/CartContext';
 import { AuthProvider } from './components/Account/AuthContext';
 
-
 const App = () => {
   return (
     <AuthProvider>

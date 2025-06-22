@@ -18,22 +18,22 @@ const users = [
   }
 ];
 
-export default{
-    users,
-    addUser(user) {
-        const newUser = {...user, id: this.users.length + 1}
-        this.users.push(newUser)
-        return newUser
-    },
-    findUserByEmail(email) {
-        return this.users.find(user => user.email === email)
-    },
-    updateUser(id, updates) {
-        const userIndex = this.users.findIndex(user => user.id === id)
-        if (userIndex !== -1) {
-            this.users[userIndex] = {...this.users[userIndex], ...updates}
-            return this.user[userIndex]
-        }
-        return null
+export default {
+  users,
+  addUser(user) {
+    const newUser = { ...user, id: this.users.length + 1 }
+    this.users.push(newUser)
+    return newUser
+  },
+  findUserByEmail(email) {
+    return this.users.find(user => user.email === email)
+  },
+  updateUser(id, updates) {
+    const userIndex = this.users.findIndex(user => user.id === id)
+    if (userIndex !== -1) {
+      this.users[userIndex] = { ...this.users[userIndex], ...updates }
+      return this.user[userIndex]
     }
+    return null
+  }
 }
